@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarActivity"
+    android:background="@drawable/conecte">
+jh
+    <TextView
+        android:layout_marginTop="120dp"
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Usúarios:"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <EditText
+       android:layout_below="@+id/txtTitulo"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:id="@+id/edNome"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:hint="Insira seu nome"/>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edUser"
+        android:layout_below="@id/edNome"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:hint="Insira seu e-mail"/>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edPass1"
+        android:layout_below="@id/edUser"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Insira a senha"/>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edPass2"
+        android:layout_below="@id/edPass1"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Confirme sua senha"/>
+
+    <Button
+        android:id="@+id/btSalvar"
+        android:layout_below="@id/edPass2"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Salvar" />
+
+</RelativeLayout>
